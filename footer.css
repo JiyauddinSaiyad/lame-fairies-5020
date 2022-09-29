@@ -19,6 +19,14 @@
   font-weight: bold;
 }
 
+/* medium screens */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+}
+
 /* footer */
 #foot {
   width: 97%;
@@ -74,9 +82,12 @@
 }
 .foot2 {
   display: flex;
-  justify-content: space-between;
 }
-.foot2 > div {
+.foot2 > div:first-child {
+  width: 70%;
+  display: inline-flex;
+}
+.foot2 > div:last-child {
   width: 30%;
   display: inline-flex;
 }
@@ -87,4 +98,23 @@
 }
 .foot2 a {
   margin: auto 1%;
+}
+
+/* medium screens */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .foot2 {
+    display: block;
+    text-align: center;
+  }
+  .foot2 > div:first-child {
+    text-align: center;
+  }
+}
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .foot2 {
+    display: block;
+    text-align: center;
+  }
 }
