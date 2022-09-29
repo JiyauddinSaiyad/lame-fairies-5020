@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+
+        #container{
+            width:70%;
+            margin:auto;
+            height:600px;
+            /* border:1px solid red; */
+            margin-top:80px;
+            display:flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 7px;
+        }
+
+        #container>div>img{
+            width:100%;
+            height:600px;
+        }
+
+        #container>div{
+            width:50%;
+        }
+
+        #login{
+            width:50%;
+            /* border:1px solid blue; */
+            text-align: center;
+        }
+
+        #title{
+            margin-top:50px;
+            font-size: 20px;;
+        }
+
+        #sub-title{
+            width:45%;
+            margin:auto;
+            
+        }
+
+        #signup-form{
+            /* border:1px solid red; */
+            padding:25px;
+        }
+
+        #email,#pwd{
+            width:68%;
+            margin-bottom: 20px;
+            height:35px;
+            text-align: center;
+        }
+
+        #signup-btn{
+            width:70%;
+            margin-top: 20px;
+            height:40px;
+            background-color:#1c1c1c;
+            color: #fff;
+            border-color: #1c1c1c;
+            
+
+        }
+
+        #signup-btn>span{
+            font-size: 15px;
+        }
+
+        #signup-btn:hover{
+            background-color:#454545;
+        }
+
+        #site{
+            margin-left:50px;
+            margin-bottom: 15px;;
+        }
+
+        #site>img{
+            margin-right:40px;
+        }
+
+        #site ~ div{
+            
+            color:grey;
+            margin:auto;
+            margin-top:35px;
+            line-height: 25px;;
+        }
+
+        #sign_in_link{
+            color:grey;
+        }
+
+        #policy>a{
+            color:grey;
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="Login_img.png">
+        </div>
+        <div id="login">
+            <p id="title">Create an account</p>
+            <p id="sub-title">Unleash your shopping power. Check ModeSens before you buy.</p>
+            <form id="signup-form">
+                <input type="email" placeholder="Email" id="email"><br>
+                <input type="password" placeholder="Password" id="pwd"><br>
+                <span id="checkbox"><input type="checkbox" id="input">Subscribe to personalized sale updates and offers</span><br>
+                <button id="signup-btn"><span id="sign-up-text"><b>SIGN UP</b></span></button>
+            </form>
+            <p>or</p>
+            <div id="site">
+                <img src="https://modesens.com/static/img/login-icon/20210617google.svg">
+                <img src="https://modesens.com/static/img/login-icon/20210617facebook.svg">
+                <img src="https://modesens.com/static/img/login-icon/20210617apple.svg">
+                <img src="https://modesens.com/static/img/login-icon/20210617wechat.svg">
+            </div>
+            <a id="sign_in_link" href="">Already have an account? Please sign in.</a>
+            <!-- <p>By creating an account, I agree to the Terms Of Use and the Privacy Policy</p> -->
+            <div id="policy">
+                By creating an account, I agree to
+                <br>
+                the
+                <a href="https://modesens.com/legal/" target="_blan">Terms Of Use</a>
+                and the
+                <a href="https://modesens.com/privacy/" target="_blan">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    
+    document.querySelector("#sign_in_link").addEventListener("click",changepage);
+    function changepage(){
+        event.preventDefault();
+        let anchor=document.querySelector("#sign_in_link").innerText;
+        
+        if(anchor=="Already have an account? Please sign in."){
+            document.querySelector("#title").innerHTML="Log in to your account";
+            let form=document.querySelector("signup-form")
+            let text=document.querySelector("#checkbox")
+            text.innerHTML=null;
+            text.innerHTML="Forgot Password?"
+            text.style.color="grey";
+            document.querySelector("#sign-up-text").innerHTML="LOGIN"
+            document.querySelector("#sign_in_link").innerText="Don't have an account? Please sign up." 
+            document.querySelector("#policy").innerHTML=null; 
+        } else {
+            location.reload();
+        }
+    }
+
+    
+
+
+
+
+    let userarray=JSON.parse(localStorage.getItem("user_sign_info")) || [];
+    document.querySelector("#signup-btn").addEventListener("click",getdata)
+
+
+    function getdata(){
+        event.preventDefault();
+
+        let text=document.querySelector("#sign-up-text").innerText
+        if(text=="SIGN UP"){
+            let EMAIL=document.querySelector("#email").value;
+            let PASSWORD=document.querySelector("#pwd").value;
+
+       
+            if(EMAIL=="" || PASSWORD==""){
+                alert("Please fill in all the fields");
+            } else if(PASSWORD.length<6){
+                alert("Password must be a minimum of 6 characters.");
+            }  else {
+                let obj={EMAIL,PASSWORD};
+                userarray.push(obj)
+                localStorage.setItem("user_sign_info",JSON.stringify(userarray));
+                alert("Signup Successfull")
+                document.querySelector("#email").value="";
+                document.querySelector("#pwd").value="";
+                changepage()
+            }
+        } else if(text=="LOGIN"){
+            let userinfo=JSON.parse(localStorage.getItem("user_sign_info")) || [];
+            let EMAIL1=document.querySelector("#email").value;
+            let PASSWORD1=document.querySelector("#pwd").value;
+
+            if(EMAIL1=="" || PASSWORD1==""){
+                alert("Enter all the details")
+            } else {
+                let login_data=userinfo.filter(function(ele,i){
+                    return ele.EMAIL==EMAIL1 && ele.PASSWORD==PASSWORD1
+                 })
+
+                 console.log(login_data);
+
+
+            if((login_data.length)==0){
+                alert("Wrong Credentials");
+                document.querySelector("#email").value="";
+                document.querySelector("#pwd").value="";
+
+            } else {
+                alert("Login successfull");
+                window.location.assign("index.html");
+                
+            }
+
+        }
+
+        }
+    }
+
+
+
+</script>
