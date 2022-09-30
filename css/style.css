@@ -204,6 +204,13 @@ a{
 	display: none;
 }
 
+#imgCr>button{
+	background-color: transparent;
+	padding: 5px 8px 5px 8px;
+	border-width: 1px;
+	margin-top: 15px;
+}
+
 /*responsive*/
 @media(max-width: 991px){
 	#container{
@@ -516,7 +523,7 @@ input[type="submit"]:hover {
 }
 /* Carousel CSS */
 
-#carouselSection,#carouselSection1 {
+#carouselSection,#carouselSection1,#carouselSection2 {
 	text-align: center;
 	/* background-color: #000000; */
   }
