@@ -1,7 +1,8 @@
 
 // Menu Start
 // Menu Import
-import { navbar,carouserCode,carouselMainCode } from "./menu.js";
+import { navbar,carouserCode,carouselMainCode,productcarousel1 } from "./menu.js";
+import { footer } from "../components/footer.js";
 
 // Menu Append
 const menuAppend = () => {
@@ -22,6 +23,19 @@ const carouselappendMain = () =>{
    carousel.innerHTML=carouselMainCode()
 }
 carouselappendMain();
+
+const productcarouselone = ()=> {
+   let prc1= document.getElementById('carouselSection2');
+   prc1.innerHTML=productcarousel1()
+}
+productcarouselone();
+
+const footerSEC = ()=>{
+   let footerDiv = document.getElementById('footer');
+   footerDiv.innerHTML = footer()
+}
+footerSEC()
+
 
 // Menu Functions
 const menu = document.querySelector(".menu");

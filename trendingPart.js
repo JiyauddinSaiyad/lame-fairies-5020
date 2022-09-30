@@ -1,6 +1,7 @@
-import {Trending} from "./components/Trending.js";
+import { trending } from "./components/Trending.js";
+
 let trend_div  = document.getElementById("trending-section");
-trend_div.innerHTML=Trending();
+trend_div.innerHTML=trending();
 let arr = [{
     image:"https://cdn.modesens.com/product/8556655_3?w=400&",
     title:"MAISON",
