@@ -1,4 +1,4 @@
-const Trending = () =>{
+const trending = () =>{
     return `
     <div id="trending-top">
     <button>Trending Now</button>
@@ -12,4 +12,4 @@ const Trending = () =>{
 </div>`
 };
 
-export {Trending};
+export {trending};

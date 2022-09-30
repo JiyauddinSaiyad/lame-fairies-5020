@@ -218,5 +218,52 @@ const carouselMainCode = () => {
 	`
 }
 
+const productcarousel1 = () =>{
+	return `
+	<div class="scroll-arrow" id="scroll-leftSpeacialOffers">
+			&#8592;
+		</div>
+		<ul id="specialProductsList">
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220926-modesens-LordTaylor-364x484.jpg" />
+				<h3>Lord & Taylor</h3>
+				<h4>REIMAGINED</h4>
+				<button>SHOP NOW</button>
+			</li>
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220926-modesens-Cettire-364x484.gif" />
+				<h3>Up to 60% off at Cettire</h3>
+				<h4>Free Express shipping for orders over $250</h4>
+				<button>SHOP NOW</button>
+			</li>
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220906-modesens-Sale-364x484.jpg" />
+				<h3>New To Sale</h3>
+				<h4>Fresh Cut</h4>
+				<button>SHOP NOW</button>
+			</li>
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220923-modesens-blog-364x484.jpg" />
+				<h3>Hey Young World</h3>
+				<h4>Blog By SSENSE</h4>
+				<button>READ NOW</button>
+			</li>
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220922-modesens-Tweed-364x484-M.jpg" />
+				<h3>Queenly Tweed</h3>
+				<h4>Commemorate this iconic style</h4>
+				<button>SHOP NOW</button>
+			</li>
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220922-modesens-Pajamas-364x484-M.jpg" />
+				<h3>Double Trouble</h3>
+				<h4>Pajamas for day or night</h4>
+				<button>SHOP NOW</button>
+			</li>
+			<li id="imgCr"><img style="width: 300px;" src="https://cdn.modesens.com/banner/20220926-modesens-LordTaylor-364x484.jpg" />
+				<h3>Lord & Taylor</h3>
+				<h4>REIMAGINED</h4>
+				<button>SHOP NOW</button>
+			</li>
+		
+		</ul>
+		<div class="scroll-arrow" id="scroll-rightSpeacialOffers">
+			&#8594;
+		</div>`
+}
 
-export { navbar, carouserCode, carouselMainCode };
+export { navbar, carouserCode, carouselMainCode,productcarousel1 };

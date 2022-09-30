@@ -2,7 +2,7 @@ const Recent = () =>{
     return `
     <div id="recent-top">
     <button>Recently-Viewed</button>
-    
+    <hr>
 </div>
 <div id="recent">
     

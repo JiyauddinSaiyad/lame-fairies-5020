@@ -1,9 +1,15 @@
 #recent-section{
+<<<<<<< HEAD
     
     margin-top: 20px;
     text-align: center;
     /* height: 300px; */
     /* border: 1px solid red; */
+=======
+    margin-top: 280px;
+    text-align: center;
+    height: 300px;
+>>>>>>> main
 }
 #recent{
     width: 70%;
@@ -37,9 +43,12 @@
     
 
 }
+<<<<<<< HEAD
 #recent>div>h4{
     font-size: 16px;
 }
+=======
+>>>>>>> main
 #recent>div>p{
   color: grey;
 }
