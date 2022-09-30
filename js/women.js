@@ -2,27 +2,27 @@ import {Trending} from "./components/Trending.js";
 let trend_div  = document.getElementById("trending-section");
 trend_div.innerHTML=Trending();
 let arr = [{
-    image:"https://cdn.modesens.com/product/8556655_3?w=400&",
-    title:"MAISON",
-    price:"$79 - $85",
+    image:"https://cdn.modesens.com/availability/52075207?w=400&",
+    title:"ATTICO",
+    price:"$521",
     
 },
 {
-    image:"https://cdn.modesens.com/availability/54594149?w=400&",
-    title:"DOLCE & GABBANA",
-    price:"$725",
+    image:"https://cdn.modesens.com/availability/52075217?w=400&",
+    title:"ATTICO",
+    price:"$657",
     
 },
 {
-    image:"https://cdn.modesens.com/availability/52210409?w=400&",
-    title:"DOLCE & GABBANA",
-    price:"$120 - $140",
+    image:"https://cdn.modesens.com/availability/51176478?w=400&",
+    title:"ATTICO",
+    price:"$194",
     
 },
 {
-    image:"https://cdn.modesens.com/product/39093046?w=400&",
-    title:"BURBERRY",
-    price:"$280",
+    image:"https://cdn.modesens.com/availability/52075272?w=400&",
+    title:"ATTICO",
+    price:"$454",
     
 },
 

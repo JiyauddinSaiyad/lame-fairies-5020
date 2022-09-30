@@ -1,8 +1,11 @@
-#trending-section{
+#recent-section{
+    
+    margin-top: 20px;
     text-align: center;
-    height: 300px;
+    /* height: 300px; */
+    /* border: 1px solid red; */
 }
-#trending{
+#recent{
     width: 70%;
     height: auto;
     margin: auto;
@@ -11,13 +14,13 @@
     gap: 20px;
     padding: 30px;
 }
-#trending>div{
+#recent>div{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     text-align: center;
     padding: 5px;
     height: auto
 }
-#trending>div>img:nth-child(1){
+#recent>div>img:nth-child(1){
     background-color: white;
     width: 25px;
     margin-left: 80%;
@@ -26,7 +29,7 @@
     position: relative;
     
 }
-#trending>div>img:nth-child(2){
+#recent>div>img:nth-child(2){
     width: 100%;
     margin-top: 0px;
     margin-top: -10px;
@@ -34,15 +37,18 @@
     
 
 }
-#trending>div>p{
+#recent>div>h4{
+    font-size: 16px;
+}
+#recent>div>p{
   color: grey;
 }
-#trending-top{
+#recent-top{
     width: 70%;
     margin: auto;
     text-align: center;
 }
-#trending-top>button{
+#recent-top>button{
   margin-top: 10px;
   background-color: white;
   border: none;
@@ -50,7 +56,7 @@
   padding: 5px 25px;
   
 }
-#trending-top>hr{
+#recent-top>hr{
     margin-top: -15px;
     height: 0px;
 }
@@ -71,5 +77,3 @@
    color: white;
    background-color: black;
 }
-
-

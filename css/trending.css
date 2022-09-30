@@ -1,9 +1,10 @@
-#recent-section{
-    margin-top: 280px;
+#trending-section{
     text-align: center;
-    height: 300px;
+    /* height: 300px; */
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
 }
-#recent{
+#trending{
     width: 70%;
     height: auto;
     margin: auto;
@@ -12,13 +13,13 @@
     gap: 20px;
     padding: 30px;
 }
-#recent>div{
+#trending>div{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     text-align: center;
     padding: 5px;
-    height: auto
+    height: 400px;
 }
-#recent>div>img:nth-child(1){
+#trending>div>img:nth-child(1){
     background-color: white;
     width: 25px;
     margin-left: 80%;
@@ -27,23 +28,27 @@
     position: relative;
     
 }
-#recent>div>img:nth-child(2){
-    width: 100%;
+#trending>div>img:nth-child(2){
+    width: 50%;
+    height: 70%;
     margin-top: 0px;
     margin-top: -10px;
     
     
 
 }
-#recent>div>p{
+#trending>div>h4{
+    font-size: 16px;
+}
+#trending>div>p{
   color: grey;
 }
-#recent-top{
+#trending-top{
     width: 70%;
     margin: auto;
     text-align: center;
 }
-#recent-top>button{
+#trending-top>button{
   margin-top: 10px;
   background-color: white;
   border: none;
@@ -51,10 +56,8 @@
   padding: 5px 25px;
   
 }
-#recent-top>hr{
-    margin-top: -15px;
-    height: 0px;
-}
+
+
 #showMoreBtn{
     background-color: white;
     border: 1px solid;
@@ -72,3 +75,5 @@
    color: white;
    background-color: black;
 }
+
+

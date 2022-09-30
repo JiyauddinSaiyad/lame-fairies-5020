@@ -2,7 +2,7 @@ const Trending = () =>{
     return `
     <div id="trending-top">
     <button>Trending Now</button>
-    <hr>
+    
 </div>
 <div id="trending">
     
