@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#container
+{
+    display: flex;
+    
+    width: 92%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#container a{
+    text-decoration: none;
+    color: gray;
+}
+#container a:hover{
+    text-decoration: underline;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+select:focus{
+    outline: 0;
+}
+option{
+    width: 200px;
+    height: 100px;
+    padding: 50px;
+}
+option:focus{
+    outline: 0;
+}
+#container2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: auto;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border: gray;
+}
+
+#container2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D3D3D3;
+    line-height: 2px;
+    
+    
+}
+#container img{
+    width: 100px;
+    height: 200px;
+}
+#container p{
+    color: gray;
+}
+
+@media screen and (max-width: 900px) {
+  
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+    
+}
+@media screen and (max-width: 1100px) {
+  
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+    }
+    
+    
+}
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <div>
+                <input type="text" oninput="debounce(filterData,1000)" id="query">
+                <i class="fa-solid fa-magnifying-glass" id="search" style="color: gray; position: absolute; top:55px; left: 240px; cursor: pointer;"></i>
+                <div style="display: flex; justify-content:space-between">
+                    <h5>Filter By:</h5>
+                    <h5>Reset</h5>
+                </div>
+                <select name="" id="">
+                    <option value="none" selected disabled hidden>Gender: All</option>
+                    <option value=""><a href="">All</a></option>
+                    <option value=""><a href="">Women</a></option>
+                    <option value=""><a href="">Men</a></option>
+                    <option value=""><a href="">Kids</a></option>
+                </select><br><br>
+                <select name="" id="">
+                    <option value="none" selected disabled hidden>Condition: New</option>
+                    <option value=""><a href="">All</a></option>
+                    <option value=""><a href="">New</a></option>
+                    <option value=""><a href="">Pre-Owned</a></option>
+                </select><br><br>
+                <select name="" id="">
+                    <option value="none" selected disabled hidden>Category: Beauty</option>
+                    <option value=""><a href="">All</a></option>
+                    <option value=""><a href="">Clothing</a></option>
+                    <option value=""><a href="">Shoes</a></option>
+                    <option value=""><a href="">Bags</a></option>
+                    <option value=""><a href="">Accessories</a></option>
+                    <option value=""><a href="">Home</a></option>
+                </select><br><br>
+                <button style="border: 1px solid gray; width:200px; height:40px; background-color: white; cursor: pointer;">SAVE MY SEARCH</button>
+            </div>
+            <h4>My Saved Searches</h4>
+            <div>
+                <h4>Related Category Women</h4>
+                <a href=""><p>Women Beauty</p></a>
+                <a href=""><p>Women Beauty Sale</p></a>
+                <a href=""><p>Home</p></a>
+                <a href=""><p>Accessories</p></a>
+                <a href=""><p>Bags</p></a>
+                <a href=""><p>Clothing</p></a>
+                <a href=""><p>Shoes</p></a>
+            </div>
+            <div>
+                <h4>Related Category Men</h4>
+                <a href=""><p>Men Grooming</p></a>
+                <a href=""><p>Men Grooming Sale</p></a>
+                <a href=""><p>Home</p></a>
+                <a href=""><p>Accessories</p></a>
+                <a href=""><p>Bags</p></a>
+                <a href=""><p>Clothing</p></a>
+                <a href=""><p>Shoes</p></a>
+            </div>
+            <div>
+                <h4>Related Category Kids</h4>
+                <a href=""><p>Kids Care</p></a>
+                <a href=""><p>Kids Care Sale</p></a>
+                <a href=""><p>Home</p></a>
+                <a href=""><p>Accessories</p></a>
+                <a href=""><p>Bags</p></a>
+                <a href=""><p>Clothing</p></a>
+                <a href=""><p>Shoes</p></a>
+            </div>
+        </div>
+
+        <div id="container2"></div>
+    </div>
+</body>
+</html>
+<script src="women_show-more.js"></script>
