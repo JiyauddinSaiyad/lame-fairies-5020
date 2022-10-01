@@ -1,0 +1,79 @@
+#trending-section{
+    text-align: center;
+    /* height: 300px; */
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+#trending{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+#trending>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    text-align: center;
+    padding: 5px;
+    height: 400px;
+}
+#trending>div>img:nth-child(1){
+    background-color: white;
+    width: 25px;
+    margin-left: 80%;
+    margin-bottom: 0px;
+    opacity: 20%;
+    position: relative;
+    
+}
+#trending>div>img:nth-child(2){
+    width: 50%;
+    height: 70%;
+    margin-top: 0px;
+    margin-top: -10px;
+    
+    
+
+}
+#trending>div>h4{
+    font-size: 16px;
+}
+#trending>div>p{
+  color: grey;
+}
+#trending-top{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#trending-top>button{
+  margin-top: 10px;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  padding: 5px 25px;
+  
+}
+
+
+#showMoreBtn{
+    background-color: white;
+    border: 1px solid;
+    text-align: center;
+    padding: 9px;
+    font-family: SuisseIntl;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 14px;
+    /* color: #ffffff; */
+
+}
+#showMoreBtn:hover{
+   color: white;
+   background-color: black;
+}
+
+

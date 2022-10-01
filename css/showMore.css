@@ -1,0 +1,101 @@
+#container{
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#container a{
+    text-decoration: none;
+    color: gray;
+}
+#container a:hover{
+    text-decoration: underline;
+}
+#info{
+
+    margin-left: 19%;
+}
+#info>p{
+  font-size: 14px;
+  color: grey;
+}
+#info>h1{
+    font-size: 22px;
+}
+#info2{
+    margin-bottom: -15px;
+    margin-left: 20px;
+}
+#info2>h4{
+   font-size: 12px;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+select:focus{
+    outline: 0;
+}
+option{
+    width: 200px;
+    height: 100px;
+    padding: 50px;
+}
+option:focus{
+    outline: 0;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+input:focus{
+    border: 1px solid gray;
+}
+#beauty_images{
+    margin-top: 60px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0;
+    /* border: 1px solid green; */
+}
+#beauty_images>div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;
+    text-align: center;
+    height: 410px;
+}
+#beauty_images>div>img:nth-child(1){
+    width: 26px;
+    margin-left: 80%;
+    opacity: 20%;
+}
+#beauty_images>div>img:nth-child(2){
+   width: 80%;
+   height: 50%;
+}
+#beauty_images>div>h3{
+    
+    font-size: 17px;
+    line-height: 13px;
+}
+#beauty_images>div>h4{
+    
+    font-size: 14px;
+    line-height: 13px;
+}
+#beauty_images>div>p{
+    
+    font-size: 14px;
+    color: grey;
+}
+
+
+
+
+
