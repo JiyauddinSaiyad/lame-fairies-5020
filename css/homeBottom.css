@@ -1,0 +1,40 @@
+/* bottom section */
+#botsec {
+  background-color: #f8f7f6;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0px;
+}
+#botsec > div {
+  width: 30%;
+  text-align: center;
+}
+#botsec > div > div {
+  width: 60%;
+  margin: auto;
+}
+#botsec > div > div > p {
+  font-weight: bold;
+  font-size: 16px;
+}
+#botsec button {
+  background-color: black;
+  color: white;
+  padding: 3%;
+  font-weight: bold;
+  font-size: 14px;
+}
+#botsec button:hover {
+  cursor: pointer;
+}
+
+/* medium & small screens */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #botsec {
+    display: block;
+  }
+  #botsec > div {
+    width: 60%;
+    margin: auto;
+  }
+}
