@@ -1,0 +1,254 @@
+/* 1st section */
+#whysec1 {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+#whysec1 > h1 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  color: white;
+  font-size: 32px;
+}
+#whysec1 > p {
+  position: absolute;
+  top: 225px;
+  left: 50px;
+  color: white;
+  font-size: 22px;
+}
+#whysec1 > button {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: white;
+  background-color: #c00000;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#whysec1 > button:hover {
+  cursor: pointer;
+}
+
+/* 2nd section */
+#whysec2 {
+  background-color: #f8f7f6;
+  padding: 50px 0;
+  width: 80%;
+  height: 380px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#whysec2 > div {
+  width: 25%;
+  padding-top: 50px;
+}
+#whysec2 span {
+  color: #c00000;
+}
+#whysec2 > div > p {
+  font-size: 17px;
+}
+#whysec2 > div > a {
+  color: #c00000;
+  font-size: 16px;
+  font-weight: bold;
+}
+#whysec2 > img {
+  width: 55%;
+}
+
+/* medium & small screens */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #whysec2 {
+    display: block;
+    height: auto;
+  }
+  #whysec2 > div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #whysec2 > img {
+    width: 100%;
+  }
+}
+
+/* 5th section */
+#whysec5 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+#whysec5 > p {
+  color: gray;
+  font-size: 17px;
+}
+
+/* 6th section */
+#whysec6 {
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#whysec6 > div {
+  width: 35%;
+  padding-top: 50px;
+}
+#whysec6 > div > p {
+  font-size: 17px;
+}
+#whysec6 > div > button {
+  color: #c00000;
+  background-color: white;
+  border-color: #c00000;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#whysec6 > img {
+  width: 60%;
+}
+
+/* medium & small screens */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #whysec6 {
+    display: block;
+    height: auto;
+  }
+  #whysec6 > div {
+    width: 100%;
+    text-align: center;
+  }
+  #whysec6 > img {
+    width: 100%;
+  }
+}
+
+/* 8th section */
+#whysec8 {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+#whysec8 > div {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+  text-align: center;
+  color: white;
+  width: 60%;
+  margin: auto;
+}
+#whysec8 > div > p:first-child {
+  font-size: 28px;
+  font-weight: bold;
+}
+#whysec8 > div > p + p {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 0px;
+}
+#whysec8 > div > button {
+  color: white;
+  background-color: #c00000;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#whysec8 > div > button:hover {
+  cursor: pointer;
+}
+
+/* 9th section */
+#whysec9 {
+  background-color: #f8f7f6;
+  padding: 50px 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#whysec9 > img {
+  width: 40%;
+}
+#whysec9 > div {
+  width: 25%;
+  padding-top: 50px;
+}
+#whysec9 > div > p {
+  font-size: 17px;
+}
+#whysec9 > div > a {
+  color: #c00000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* medium & small screens */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #whysec9 {
+    display: block;
+  }
+  #whysec9 > img {
+    width: 100%;
+  }
+  #whysec9 > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 10th section */
+#whysec10 {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+#whysec10 > div {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  text-align: center;
+  color: white;
+  width: 60%;
+  margin: auto;
+}
+#whysec10 > div > p:first-child {
+  font-size: 40px;
+  font-weight: bold;
+}
+#whysec10 > div > p + p {
+  font-size: 22px;
+}
+#whysec10 > div > a {
+  color: white;
+}
+#whysec10 > p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+#whysec10 > button {
+  color: white;
+  background-color: #c00000;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+#whysec10 > button:hover {
+  cursor: pointer;
+}
