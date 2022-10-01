@@ -1,0 +1,43 @@
+#addver-main{
+
+    width: 99%;
+    height: auto;
+    margin: auto;
+    background-color: #f8f7f6;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#addver-main>div{
+
+    text-align: center;
+
+}
+#right>img{
+    width: 50%;
+    
+    
+}
+#left>img{
+    width: 25%;
+}
+#addver-main>div>h1{
+    font-size: 30px;
+    padding: 5px 200px;
+    
+}
+#addver-main>div>p{
+    padding: 10px 170px;
+    
+}
+#addver-main>div>button{
+    padding: 6px 10px ;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}

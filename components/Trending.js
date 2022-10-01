@@ -1,8 +1,8 @@
-const Trending = () =>{
+const trending = () =>{
     return `
     <div id="trending-top">
     <button>Trending Now</button>
-    <hr>
+    
 </div>
 <div id="trending">
     
@@ -12,4 +12,4 @@ const Trending = () =>{
 </div>`
 };
 
-export {Trending};
+export {trending};

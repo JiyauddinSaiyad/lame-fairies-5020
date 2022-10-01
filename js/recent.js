@@ -1,5 +1,4 @@
-import { Recent } from "./components/recentView.js";
-
+import {Recent} from "./components/recentView.js";
 let rec_div  = document.getElementById("recent-section");
 rec_div.innerHTML=Recent();
 let arr = [{
