@@ -1,7 +1,7 @@
 const Community = () =>{
     return `
     <div id="divider">
-        <h3>Community Posts</h3>
+
     </div>
     <section id="community" class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

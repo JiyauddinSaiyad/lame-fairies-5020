@@ -149,7 +149,8 @@ const navbar = () => {
       </div>
 
             <a href="#"><i class="far fa-heart"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html" ><i class="fas fa-user"></i></a>
             <!-- mobile menu trigger -->
             <div class="mobile-menu-trigger">
                 <span></span>

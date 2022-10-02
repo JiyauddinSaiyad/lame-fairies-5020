@@ -42,6 +42,9 @@ price.innerText = `$ ${data.price}`;
 let addtoBag = document.createElement('button');
 addtoBag.innerText = "ADD TO BAG";
 addtoBag.id = "addtobagbtn";
+addtoBag.addEventListener('click',()=>{
+    checkOut()
+})
 
 let compDet = document.createElement('h3');
 compDet.innerText = 'Shop With ModeSend Concierge';
@@ -52,3 +55,9 @@ CompdetP.innerText = 'ModeSens Concierge helps you shop 500+ stores in one place
 imgdiv.append(img,compDet,CompdetP)
 div.append(name,det,price,addtoBag);
 pro.append(imgdiv, div)
+
+const checkOut=()=>{
+    console.log('Check')
+    localStorage.setItem('checkoutProduct',JSON.stringify(data))
+    window.location.href='checkout.html'
+}

@@ -3,6 +3,9 @@
 // Menu Import
 import { navbar,carouserCode,carouselMainCode,productcarousel1 } from "./menu.js";
 import { footer } from "../components/footer.js";
+import {Community} from "../components/community.js"
+
+// console.log("➡️   ~ file: script.js ~ line 7 ~ trending", trending);
 
 // Menu Append
 const menuAppend = () => {
@@ -35,6 +38,12 @@ const footerSEC = ()=>{
    footerDiv.innerHTML = footer()
 }
 footerSEC()
+
+const communitySec = ()=>{
+   let footerDiv = document.getElementById('CommunityPost');
+   footerDiv.innerHTML = Community()
+}
+communitySec()
 
 
 // Menu Functions

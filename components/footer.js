@@ -199,14 +199,12 @@ const conPOPUP=()=>{
 
 const Trending = () =>{
   return `
-  <div id="trending-top">
-  <button>Trending Now</button>
-  <hr>
+
 </div>
 <div id="trending">
   
 </div>
-<div id="showMore">
+<div  style="margin: auto; text-align: center" id="showMore">
   <button id="showMoreBtn">SHOP MORE</button>
 </div>`
 };
