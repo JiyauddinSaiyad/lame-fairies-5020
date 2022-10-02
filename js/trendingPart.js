@@ -1,7 +1,7 @@
-import { trending } from "./components/Trending.js";
+import { Trending } from "../components/footer.js";
 
 let trend_div  = document.getElementById("trending-section");
-trend_div.innerHTML=trending();
+trend_div.innerHTML=Trending();
 let arr = [{
     image:"https://cdn.modesens.com/product/8556655_3?w=400&",
     title:"MAISON",
@@ -52,3 +52,5 @@ const getData = () =>{
 }
 
 getData(arr);
+
+// import { Trending } from "../components/footer";
