@@ -32,13 +32,15 @@
     <div id="container">
         <div id="slider">
             <div>
-                <input type="text">
+                <form action="">
+                    <input type="text" id="filterinput">
+                </form>
               
                 <div style="display: flex; justify-content:space-between">
                     <h5>Filter By:</h5>
                     <h5>Reset</h5>
                 </div>
-                <select name="" id="">
+                <select name="" id="selected" onchange="filterData">
                     <option value="none" selected disabled hidden>Gender: All</option>
                     <option value=""><a href="">All</a></option>
                     <option value=""><a href="">Women</a></option>
@@ -140,9 +142,7 @@
 
         </div>
 
-        <div id="beauty_images">
-
-        </div>
+        <div id="beauty_images" class="results-container"></div>
     </div>
      <section id="footer">
         <!-- import footer here -->
