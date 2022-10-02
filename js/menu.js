@@ -131,7 +131,7 @@ const navbar = () => {
                     <a href="#">COMMUNITY</a>
                 </li>
                 <li>
-                        <a href="#">WHY MODESENS</a>
+                        <a href="whyModesens.html">WHY MODESENS</a>
                     </li>
                     <li>
                     <a href="#">COUPONS</a>
