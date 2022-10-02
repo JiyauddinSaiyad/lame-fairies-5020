@@ -50,10 +50,11 @@ option:focus{
 input{
     width: 200px;
     height: 30px;
-    border: none;
+    border: 1px solid gray;
+
 }
 input:focus{
-    border: 1px solid gray;
+    outline: 0;
 }
 #beauty_images{
     margin-top: 60px;

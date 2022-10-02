@@ -11,6 +11,7 @@ const getData = async () =>{
         let actual_data = data.products_m;
         console.log(actual_data);
         append(actual_data)
+        filterData(actual_data)
     } catch (error) {
         console.log(error);
     }
@@ -43,7 +44,8 @@ const append = (actual_data) =>{
      beauty_div.append(div);
    });
 }
-let filterinput = document.getElementById("filterinput");
+
+/*let filterinput = document.getElementById("filterinput");
 
 filterinput.addEventListener("keyup",filterProducts);
 
@@ -53,22 +55,38 @@ function filterProducts(actual_data)
 
     let item = beauty_div.querySelectorAll(".item");
 
-    for(let i=0;i<item.length;i++)
+    for(let i=0;i<actual_data.length;i++)
     {
-        let span = item[i].name;
+        let span = actual_data[i].title;
 
-        if(span.innerHTML.toUpperCase().indexOf(filterValue)>-1)
+        if(actual_data.innerHTML.toUpperCase().indexOf(filterValue)>-1)
         {
-            item[i].style.display = "initial";
+            actual_data[i].style.display = "initial";
         }
         else
         {
-            item[i].style.display = "none";
+            actual_data[i].style.display = "none";
         }
     }
     //append(actual_data);
     console.log(filterValue);
 }
+*/
+function filterData(){
+    let selected = document.getElementById("select1").value;
+    console.log(selected);
+
+    if(selected == "Men"){
+        actual_data.sort(function(a,b){
+            if(a.price-b.price) return 1;
+            if(b.price-a.price) return -1;
+            return 0;
+
+        });
+        //append(actual_data)
+    }
+}
+
 
 
 
