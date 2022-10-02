@@ -1,6 +1,6 @@
 import { Trending } from "../components/footer.js";
 
-let trend_div  = document.getElementById("trending-section");
+let trend_div  = document.getElementById("trendingDiv");
 trend_div.innerHTML=Trending();
 let arr = [{
     image:"https://cdn.modesens.com/product/8556655_3?w=400&",

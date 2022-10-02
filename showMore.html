@@ -2,27 +2,20 @@
 <html lang="en">
 
 <head>
-
-    
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-        <link rel="shortcut icon" href="https://cdn.modesens.com/static/img/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="./css/showMore.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/product.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-        <title>ShowMore</title>
-    
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/showMore.css">
+    <link rel="shortcut icon" href="https://cdn.modesens.com/static/img/favicon.png" type="image/x-icon">
+    <title>Designer Beauty | ModeSens</title>
 </head>
+
 <body>
-    <section id="navbar">
-        <!-- import navbar here -->
-    </section>
+    <header id="header">
+	</header>
    <div id="info">
     <h1>Men's Fashion & Designer Products</h1>
     <p>Compare prices and shop men's fashion across 500+ stores in one place. Discover the latest designer fashion for men at ModeSens. Check ModeSens before you buy!</p>
@@ -33,7 +26,7 @@
         <h4 style="color: gray">MODESENS / SHOP / PRODUCTS</h4>
     </div>
     <div id="container1">
-        <div id="slider1">
+        <div id="slider">
             <div>
                 <input type="text">
               
@@ -41,21 +34,21 @@
                     <h5>Filter By:</h5>
                     <h5>Reset</h5>
                 </div>
-                <select name="" id="">
-                    <option value="none" selected disabled hidden>Gender: All</option>
-                    <option value=""><a href="">All</a></option>
-                    <option value=""><a href="">Women</a></option>
-                    <option value=""><a href="">Men</a></option>
-                    <option value=""><a href="">Kids</a></option>
+                <select name="" id="filterbyBrands">
+                    <option value="none" selected disabled hidden>Brand: All</option>
+                    <option value="All"><a href="">All</a></option>
+                    <option value="VERSACE"><a href="">VERSACE</a></option>
+                    <option value="VALENTINO"><a href="">VALENTINO</a></option>
+                    <option value="BALMAIN"><a href="">BALMAIN</a></option>
+                    <option value="MARNI"><a href="">MARNI</a></option>
+                </select><br><br>
+                <select name="" id="priceFilter">
+                    <option value="none" selected disabled hidden>Price: Default</option>
+                    <option value="lToh"><a href="">Low To High</a></option>
+                    <option value="hTol"><a href="">High To Low</a></option>
                 </select><br><br>
                 <select name="" id="">
-                    <option value="none" selected disabled hidden>Condition: New</option>
-                    <option value=""><a href="">All</a></option>
-                    <option value=""><a href="">New</a></option>
-                    <option value=""><a href="">Pre-Owned</a></option>
-                </select><br><br>
-                <select name="" id="">
-                    <option value="none" selected disabled hidden>Category: Beauty</option>
+                    <option value="none" selected disabled hidden>Category: Clothing</option>
                     <option value=""><a href="">All</a></option>
                     <option value=""><a href="">Clothing</a></option>
                     <option value=""><a href="">Shoes</a></option>
@@ -147,11 +140,10 @@
 
         </div>
     </div>
-     <section id="footer">
-        <!-- import footer here -->
-     </section>
+	<div id="footer"></div>
 
-    </body>
+</body>
 
 </html>
-<script type="module" src="./js/showMore.js"></script>
+<script type="module" src="js/showMore.js"></script>
+
